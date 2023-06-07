@@ -1,0 +1,88 @@
+{
+  "vi": {
+    "common": {
+      "titleCltv": "Customer lifetime value"
+    },
+    "chart": {
+      "titleChartAge": "Độ tuổi",
+      "titleChartProvince": "Tỉnh/TP",
+      "titleChartObject": "Đối tượng",
+      "titleChartProductType": "Loại sản phẩm"
+    },
+    "total": {
+      "titleTotal": "Total Performances",
+      "titleTotalPharmacist": "Dược sĩ",
+      "titleTotalPharmacy": "Nhà thuốc",
+      "titleTotalChartMau": "Monthly Active Users",
+      "unitTotal": "VNĐ/Người dùng"
+    },
+    "cpe": {
+      "titleCpe": "CPE & DPI",
+      "sponsors": "Sanofi, Ipsen, Pfizer, Mundipharma, Merap, RB...",
+      "titleCpeContent1": "Tổng khóa học",
+      "titleCpeContent2": "Khóa học có tài trợ",
+      "titleCpeContent3": "Dược sĩ tham gia",
+      "titleCpeContent4": "Nhà tài trợ nổi bật",
+      "unitCpe": "VNĐ/Dược sĩ"
+    },
+    "pms": {
+      "titlePms": "PharmaSales",
+      "titlePmsContent1": "Sản phẩm",
+      "titlePmsContent2": "Đơn hàng",
+      "titlePmsContent3": "Nhà thuốc tham gia",
+      "titlePmsContent4": "Nhà sản xuất",
+      "unitPms": "VNĐ/Nhà thuốc"
+    },
+    "sop": {
+      "titleSop": "SOP",
+      "titleSopContent1": "Chương trình",
+      "titleSopContent2": "Sản phẩm",
+      "titleSopContent3": "Người dùng tham gia",
+      "titleSopContent4": "Khách",
+      "unitSop": "VNĐ/Người dùng"
+    }
+  },
+  "en": {
+    "common": {
+      "titleCltv": "Customer lifetime value"
+    },
+    "chart": {
+      "titleChartAge": "Age",
+      "titleChartProvince": "Province",
+      "titleChartObject": "Object",
+      "titleChartProductType": "Product Type"
+    },
+    "total": {
+      "titleTotal": "Total Performances",
+      "titleTotalPharmacist": "Pharmacists",
+      "titleTotalPharmacy": "Pharmacies",
+      "titleTotalChartMau": "Monthly Active Users",
+      "unitTotal": "VNĐ/User"
+    },
+    "cpe": {
+      "titleCpe": "CPE & DPI",
+      "sponsors": "Sanofi, Ipsen, Pfizer, Mundipharma, Merap, RB...",
+      "titleCpeContent1": "Total courses",
+      "titleCpeContent2": "Sponsored courses",
+      "titleCpeContent3": "Participating pharmacists",
+      "titleCpeContent4": "Featured Sponsors",
+      "unitCpe": "VNĐ/Pharmacist"
+    },
+    "pms": {
+      "titlePms": "PharmaSales",
+      "titlePmsContent1": "Products",
+      "titlePmsContent2": "Orders",
+      "titlePmsContent3": "Participating pharmacies",
+      "titlePmsContent4": "Producers",
+      "unitPms": "VNĐ/Pharmacy"
+    },
+    "sop": {
+      "titleSop": "SOP",
+      "titleSopContent1": "Events",
+      "titleSopContent2": "Products",
+      "titleSopContent3": "Participating users",
+      "titleSopContent4": "Clients",
+      "unitSop": "VNĐ/User"
+    }
+  }
+}
