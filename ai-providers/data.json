@@ -1,119 +1,130 @@
 [
   {
     "provider": "gemini",
+    "label": "Google Gemini",
     "models": [
-      { "model": "gemini-3.5-flash-lite", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "minimal", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 60 },
-      { "model": "gemini-3.1-pro-preview", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 65536, "ai_timeout_ms": 120000, "rate_limit_per_minute": 15 },
-      { "model": "gemini-3-flash-preview", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
-      { "model": "gemini-2.5-pro", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "high", "ai_max_output_tokens": 65536, "ai_timeout_ms": 120000, "rate_limit_per_minute": 15 },
-      { "model": "gemini-2.5-flash", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
-      { "model": "gemini-2.5-flash-lite", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "low", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 60 },
-      { "model": "gemini-2.0-flash", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 60 },
-      { "model": "gemini-1.5-pro", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 15 }
+      { "model": "gemini-3.5-flash-lite", "label": "Gemini 3.5 Flash-Lite", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "minimal", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 60 },
+      { "model": "gemini-3.1-pro-preview", "label": "Gemini 3.1 Pro (Preview)", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 65536, "ai_timeout_ms": 120000, "rate_limit_per_minute": 15 },
+      { "model": "gemini-3-flash-preview", "label": "Gemini 3 Flash (Preview)", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
+      { "model": "gemini-2.5-pro", "label": "Gemini 2.5 Pro", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "high", "ai_max_output_tokens": 65536, "ai_timeout_ms": 120000, "rate_limit_per_minute": 15 },
+      { "model": "gemini-2.5-flash", "label": "Gemini 2.5 Flash", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
+      { "model": "gemini-2.5-flash-lite", "label": "Gemini 2.5 Flash-Lite", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "low", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 60 },
+      { "model": "gemini-2.0-flash", "label": "Gemini 2.0 Flash", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 60 },
+      { "model": "gemini-1.5-pro", "label": "Gemini 1.5 Pro", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 15 }
     ]
   },
   {
     "provider": "openai",
+    "label": "OpenAI",
     "models": [
-      { "model": "gpt-5.2", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
-      { "model": "gpt-5.2-pro", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 65536, "ai_timeout_ms": 300000, "rate_limit_per_minute": 10 },
-      { "model": "gpt-5-mini", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "low", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "gpt-5-nano", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "minimal", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 },
-      { "model": "gpt-4.1", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "o4-mini", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
-      { "model": "gpt-4o", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "gpt-4o-mini", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 }
+      { "model": "gpt-5.2", "label": "GPT-5.2", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
+      { "model": "gpt-5.2-pro", "label": "GPT-5.2 Pro", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 65536, "ai_timeout_ms": 300000, "rate_limit_per_minute": 10 },
+      { "model": "gpt-5-mini", "label": "GPT-5 Mini", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "low", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "gpt-5-nano", "label": "GPT-5 Nano", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "minimal", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 },
+      { "model": "gpt-4.1", "label": "GPT-4.1", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "o4-mini", "label": "o4-mini", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
+      { "model": "gpt-4o", "label": "GPT-4o", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "gpt-4o-mini", "label": "GPT-4o Mini", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 }
     ]
   },
   {
     "provider": "anthropic",
+    "label": "Anthropic Claude",
     "models": [
-      { "model": "claude-opus-5-5", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 32000, "ai_timeout_ms": 180000, "rate_limit_per_minute": 20 },
-      { "model": "claude-sonnet-5-5", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32000, "ai_timeout_ms": 120000, "rate_limit_per_minute": 40 },
-      { "model": "claude-haiku-5-5", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "low", "ai_max_output_tokens": 16000, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "claude-sonnet-4-5", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32000, "ai_timeout_ms": 120000, "rate_limit_per_minute": 40 },
-      { "model": "claude-haiku-4-5", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "low", "ai_max_output_tokens": 16000, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "claude-opus-4-1", "tier": "legacy", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 32000, "ai_timeout_ms": 180000, "rate_limit_per_minute": 20 },
-      { "model": "claude-3-5-haiku-latest", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 60 }
+      { "model": "claude-opus-5-5", "label": "Claude Opus 5.5", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 32000, "ai_timeout_ms": 180000, "rate_limit_per_minute": 20 },
+      { "model": "claude-sonnet-5-5", "label": "Claude Sonnet 5.5", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32000, "ai_timeout_ms": 120000, "rate_limit_per_minute": 40 },
+      { "model": "claude-haiku-5-5", "label": "Claude Haiku 5.5", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "low", "ai_max_output_tokens": 16000, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "claude-sonnet-4-5", "label": "Claude Sonnet 4.5", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "medium", "ai_max_output_tokens": 32000, "ai_timeout_ms": 120000, "rate_limit_per_minute": 40 },
+      { "model": "claude-haiku-4-5", "label": "Claude Haiku 4.5", "tier": "popular", "ai_temperature": 1.0, "ai_thinking_level": "low", "ai_max_output_tokens": 16000, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "claude-opus-4-1", "label": "Claude Opus 4.1", "tier": "legacy", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 32000, "ai_timeout_ms": 180000, "rate_limit_per_minute": 20 },
+      { "model": "claude-3-5-haiku-latest", "label": "Claude 3.5 Haiku", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 60 }
     ]
   },
   {
     "provider": "xai",
+    "label": "xAI Grok",
     "models": [
-      { "model": "grok-4", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
-      { "model": "grok-4-fast-reasoning", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 90000, "rate_limit_per_minute": 60 },
-      { "model": "grok-4-fast-non-reasoning", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 45000, "rate_limit_per_minute": 60 },
-      { "model": "grok-code-fast-1", "tier": "popular", "ai_temperature": 0.3, "ai_thinking_level": "low", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "grok-3", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
-      { "model": "grok-3-mini", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "low", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 }
+      { "model": "grok-4", "label": "Grok 4", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
+      { "model": "grok-4-fast-reasoning", "label": "Grok 4 Fast (Reasoning)", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 90000, "rate_limit_per_minute": 60 },
+      { "model": "grok-4-fast-non-reasoning", "label": "Grok 4 Fast (Non-reasoning)", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 45000, "rate_limit_per_minute": 60 },
+      { "model": "grok-code-fast-1", "label": "Grok Code Fast 1", "tier": "popular", "ai_temperature": 0.3, "ai_thinking_level": "low", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "grok-3", "label": "Grok 3", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
+      { "model": "grok-3-mini", "label": "Grok 3 Mini", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "low", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 }
     ]
   },
   {
     "provider": "deepseek",
+    "label": "DeepSeek",
     "models": [
-      { "model": "deepseek-v3.2", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "deepseek-v3.2-thinking", "tier": "latest", "ai_temperature": 0.6, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 180000, "rate_limit_per_minute": 30 },
-      { "model": "deepseek-chat", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "deepseek-reasoner", "tier": "popular", "ai_temperature": 0.6, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 180000, "rate_limit_per_minute": 30 },
-      { "model": "deepseek-coder", "tier": "legacy", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 }
+      { "model": "deepseek-v3.2", "label": "DeepSeek V3.2", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "deepseek-v3.2-thinking", "label": "DeepSeek V3.2 (Thinking)", "tier": "latest", "ai_temperature": 0.6, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 180000, "rate_limit_per_minute": 30 },
+      { "model": "deepseek-chat", "label": "DeepSeek Chat", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "deepseek-reasoner", "label": "DeepSeek Reasoner", "tier": "popular", "ai_temperature": 0.6, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 180000, "rate_limit_per_minute": 30 },
+      { "model": "deepseek-coder", "label": "DeepSeek Coder", "tier": "legacy", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 }
     ]
   },
   {
     "provider": "mistral",
+    "label": "Mistral AI",
     "models": [
-      { "model": "mistral-large-latest", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "magistral-medium-latest", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
-      { "model": "mistral-medium-latest", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "mistral-small-latest", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 },
-      { "model": "codestral-latest", "tier": "popular", "ai_temperature": 0.2, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 45000, "rate_limit_per_minute": 60 },
-      { "model": "open-mistral-nemo", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 }
+      { "model": "mistral-large-latest", "label": "Mistral Large", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "magistral-medium-latest", "label": "Magistral Medium", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
+      { "model": "mistral-medium-latest", "label": "Mistral Medium", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "mistral-small-latest", "label": "Mistral Small", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 },
+      { "model": "codestral-latest", "label": "Codestral", "tier": "popular", "ai_temperature": 0.2, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 45000, "rate_limit_per_minute": 60 },
+      { "model": "open-mistral-nemo", "label": "Mistral Nemo", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 }
     ]
   },
   {
     "provider": "qwen",
+    "label": "Alibaba Qwen",
     "models": [
-      { "model": "qwen3-max", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
-      { "model": "qwen-plus", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "qwen-flash", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 },
-      { "model": "qwen3-coder-plus", "tier": "popular", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "qwen-turbo", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 },
-      { "model": "qwen2.5-72b-instruct", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 }
+      { "model": "qwen3-max", "label": "Qwen3 Max", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
+      { "model": "qwen-plus", "label": "Qwen Plus", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "qwen-flash", "label": "Qwen Flash", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 },
+      { "model": "qwen3-coder-plus", "label": "Qwen3 Coder Plus", "tier": "popular", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "qwen-turbo", "label": "Qwen Turbo", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 },
+      { "model": "qwen2.5-72b-instruct", "label": "Qwen2.5 72B Instruct", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 }
     ]
   },
   {
     "provider": "moonshot",
+    "label": "Moonshot AI (Kimi)",
     "models": [
-      { "model": "kimi-k2-thinking", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 180000, "rate_limit_per_minute": 20 },
-      { "model": "kimi-k2-0905-preview", "tier": "popular", "ai_temperature": 0.6, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
-      { "model": "kimi-latest", "tier": "popular", "ai_temperature": 0.6, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
-      { "model": "moonshot-v1-128k", "tier": "legacy", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 20 }
+      { "model": "kimi-k2-thinking", "label": "Kimi K2 Thinking", "tier": "latest", "ai_temperature": 1.0, "ai_thinking_level": "high", "ai_max_output_tokens": 32768, "ai_timeout_ms": 180000, "rate_limit_per_minute": 20 },
+      { "model": "kimi-k2-0905-preview", "label": "Kimi K2 (0905 Preview)", "tier": "popular", "ai_temperature": 0.6, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
+      { "model": "kimi-latest", "label": "Kimi Latest", "tier": "popular", "ai_temperature": 0.6, "ai_thinking_level": "none", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
+      { "model": "moonshot-v1-128k", "label": "Moonshot V1 128K", "tier": "legacy", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 20 }
     ]
   },
   {
     "provider": "zhipu",
+    "label": "Zhipu AI (GLM)",
     "models": [
-      { "model": "glm-4.6", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
-      { "model": "glm-4.5", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 90000, "rate_limit_per_minute": 30 },
-      { "model": "glm-4.5-air", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "low", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
-      { "model": "glm-4-flash", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 }
+      { "model": "glm-4.6", "label": "GLM-4.6", "tier": "latest", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
+      { "model": "glm-4.5", "label": "GLM-4.5", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "medium", "ai_max_output_tokens": 32768, "ai_timeout_ms": 90000, "rate_limit_per_minute": 30 },
+      { "model": "glm-4.5-air", "label": "GLM-4.5 Air", "tier": "popular", "ai_temperature": 0.7, "ai_thinking_level": "low", "ai_max_output_tokens": 16384, "ai_timeout_ms": 60000, "rate_limit_per_minute": 60 },
+      { "model": "glm-4-flash", "label": "GLM-4 Flash", "tier": "legacy", "ai_temperature": 0.7, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 }
     ]
   },
   {
     "provider": "cohere",
+    "label": "Cohere",
     "models": [
-      { "model": "command-a-03-2025", "tier": "latest", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
-      { "model": "command-r-plus-08-2024", "tier": "popular", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
-      { "model": "command-r-08-2024", "tier": "popular", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 45000, "rate_limit_per_minute": 60 },
-      { "model": "command-r7b-12-2024", "tier": "legacy", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 }
+      { "model": "command-a-03-2025", "label": "Command A", "tier": "latest", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
+      { "model": "command-r-plus-08-2024", "label": "Command R+", "tier": "popular", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 60000, "rate_limit_per_minute": 30 },
+      { "model": "command-r-08-2024", "label": "Command R", "tier": "popular", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 45000, "rate_limit_per_minute": 60 },
+      { "model": "command-r7b-12-2024", "label": "Command R7B", "tier": "legacy", "ai_temperature": 0.3, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 30000, "rate_limit_per_minute": 100 }
     ]
   },
   {
     "provider": "perplexity",
+    "label": "Perplexity",
     "models": [
-      { "model": "sonar-pro", "tier": "latest", "ai_temperature": 0.2, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 50 },
-      { "model": "sonar-reasoning-pro", "tier": "latest", "ai_temperature": 0.2, "ai_thinking_level": "high", "ai_max_output_tokens": 8192, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
-      { "model": "sonar", "tier": "popular", "ai_temperature": 0.2, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 30000, "rate_limit_per_minute": 50 },
-      { "model": "sonar-deep-research", "tier": "popular", "ai_temperature": 0.2, "ai_thinking_level": "high", "ai_max_output_tokens": 16384, "ai_timeout_ms": 600000, "rate_limit_per_minute": 5 }
+      { "model": "sonar-pro", "label": "Sonar Pro", "tier": "latest", "ai_temperature": 0.2, "ai_thinking_level": "none", "ai_max_output_tokens": 8192, "ai_timeout_ms": 60000, "rate_limit_per_minute": 50 },
+      { "model": "sonar-reasoning-pro", "label": "Sonar Reasoning Pro", "tier": "latest", "ai_temperature": 0.2, "ai_thinking_level": "high", "ai_max_output_tokens": 8192, "ai_timeout_ms": 120000, "rate_limit_per_minute": 30 },
+      { "model": "sonar", "label": "Sonar", "tier": "popular", "ai_temperature": 0.2, "ai_thinking_level": "none", "ai_max_output_tokens": 4096, "ai_timeout_ms": 30000, "rate_limit_per_minute": 50 },
+      { "model": "sonar-deep-research", "label": "Sonar Deep Research", "tier": "popular", "ai_temperature": 0.2, "ai_thinking_level": "high", "ai_max_output_tokens": 16384, "ai_timeout_ms": 600000, "rate_limit_per_minute": 5 }
     ]
   }
 ]
